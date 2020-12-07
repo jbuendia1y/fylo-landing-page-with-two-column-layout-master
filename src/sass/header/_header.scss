@@ -1,0 +1,56 @@
+.header{
+    font-family: $font;
+    &__img{
+        max-width: 100%;
+    }
+
+    &__title,&__paragraph{
+        text-align: center;
+        color: $VeryDarkBlue;
+    }
+    &__title{
+        font-size: 1.5em;
+    }
+    &__paragraph{
+        font-size: 1em;
+    }
+
+    &-form{
+        @include form;
+
+        &__email{
+            border: 1px solid $VeryDarkBlue;
+        }
+    }
+}
+
+@media screen and (min-width:1024px){
+    .header{
+        &__box{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: auto;
+            align-items: center;
+        }
+        &__img{
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+
+        &__title,&__paragraph{
+            text-align: left;
+        }
+
+        &-form{
+            flex-direction: row;
+            &__email{
+                margin-bottom: 0;
+                width: 50%;
+            }
+            &__button{
+                margin-left: 1em;
+                width: 40%;
+            }
+        }
+    }
+}

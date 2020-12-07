@@ -1,0 +1,25 @@
+@mixin form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__email,&__button{
+        width: 100%;
+        padding: .8em;
+        border: none;
+        border-radius: 5px;
+    }
+    
+    &__email{
+        color: $LightGray;
+        background-color: white;
+        box-sizing: border-box;
+
+        padding-left: 1.5em;
+        margin-bottom: .5em;
+    }
+    &__button{
+        color: $LightGrayishBlue;
+        background-color: $BrightBlue;
+    }
+}

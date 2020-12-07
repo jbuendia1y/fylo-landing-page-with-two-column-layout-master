@@ -1,0 +1,38 @@
+.nav{
+    padding-top: .5em;
+    &__box{
+        display: flex;
+        align-items: center;
+    }
+    &__logo{
+        max-height: 100%;
+        width: 28%;
+        margin-right: auto;
+    }
+}
+
+.menu{
+    display: flex;
+    &__item{
+        list-style: none;
+        margin: 0 .5em;
+
+        &:nth-child(1){
+            margin-left: 0;
+        }
+    }
+    &__link{
+        text-decoration: none;
+        font-size: .9em;
+        font-family: $font; 
+        color: $VeryDarkBlue;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .nav{
+        &__logo{
+            width: 15%;
+        }
+    }
+}

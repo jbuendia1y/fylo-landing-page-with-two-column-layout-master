@@ -1,0 +1,95 @@
+.work{
+    margin-top: 8em;
+    padding-bottom: 4.5em;
+    position: relative;
+    background-color: $LightGrayishBlue;
+    
+    &::before{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 55px;
+        position: absolute;
+        top: -50px;
+        background-image: url('/assets/images/bg-curve-mobile.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__img{
+        margin-top: 2em;
+        max-width: 100%;
+    }
+
+    &__text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-top: 2em;
+    }
+
+    &__title{
+        color: $VeryDarkBlue;
+        text-align: center;
+        font-size: 1em;
+    }
+
+    &__paragraph{
+        &-block{
+            color: $DesaturatedBlue;
+            display: block;
+            
+            &:nth-child(1){
+                margin-bottom: 1em;
+            }
+        }
+    }
+
+    &__link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-top: 1em;
+        padding-bottom: .5em;
+
+        text-decoration: none;
+        color: $ModerateCyan;
+
+        border-bottom: 1px solid $ModerateCyan;
+
+        &-ml{
+            margin-left: .5em;
+        }
+    }
+}
+
+@media screen and (min-width:1024px){
+    .work{
+        &__box{
+            display: grid;
+            grid-template-columns: repeat(2,50%);
+            grid-template-rows: auto;
+        }
+        &__img{
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+
+        &__text{
+            align-items: flex-start;
+        }
+
+        &__title,&__paragraph{
+            text-align: left;
+        }
+    }
+}
