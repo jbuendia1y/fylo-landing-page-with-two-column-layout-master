@@ -22,10 +22,10 @@ html(lang="en")
             .container.nav__box
                 img(src="assets/images/logo.svg", alt="logo").nav__logo
                 ul.menu
-                    li.menu__item: a(href="#").menu__link Features
-                    li.menu__item: a(href="#").menu__link Team
-                    li.menu__item: a(href="#").menu__link Sign In
-        header.header
+                    li.menu__item: a(href="#features").menu__link Features
+                    li.menu__item: a(href="#team").menu__link Team
+                    li.menu__item: a(href="#singIn").menu__link Sign In
+        header.header#features
             .container.header__box
                 img(src="assets/images/illustration-1.svg", alt="header-img").header__img
                 .header__text
@@ -36,7 +36,7 @@ html(lang="en")
                     form.header-form
                         input(type="email",placeholder="Enter your email...",aria-label="email").header-form__email
                         button(type="submit").header-form__button  Get Started
-        section.work
+        section.work#team
             .container.work__box
                 img(src="assets/images/illustration-2.svg", alt="section-img").work__img
                 .work__text
@@ -58,7 +58,7 @@ html(lang="en")
                             .card__person-block
                                 h3.card__title  Kyle Burton
                                 p.card__subtitle   Founder & CEO, Huddle
-        section.access
+        section.access#singIn
             .container.access__box
                 .access__text
                     h2.access__title  Get early access today

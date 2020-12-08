@@ -7,7 +7,9 @@
         width: 100%;
         padding: .8em;
         border: none;
-        border-radius: 5px;
+        border-radius: 2px;
+        
+        box-shadow: 10px 5px 18px -17px $LightGray;
     }
     
     &__email{
@@ -21,5 +23,6 @@
     &__button{
         color: $LightGrayishBlue;
         background-color: $BrightBlue;
+        font-weight: 700;
     }
 }

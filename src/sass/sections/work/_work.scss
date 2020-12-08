@@ -8,9 +8,9 @@
         content: "";
         display: block;
         width: 100%;
-        height: 55px;
+        height: 10%;
         position: absolute;
-        top: -50px;
+        bottom: 100%;
         background-image: url('/assets/images/bg-curve-mobile.svg');
         background-size: cover;
         background-repeat: no-repeat;
@@ -40,6 +40,7 @@
         color: $VeryDarkBlue;
         text-align: center;
         font-size: 1em;
+        font-family: $font;
     }
 
     &__paragraph{
@@ -74,6 +75,11 @@
 
 @media screen and (min-width:1024px){
     .work{
+
+        &::before{
+            height: 14%;
+            background-image: url('/assets/images/bg-curve-desktop.svg');
+        }
         &__box{
             display: grid;
             grid-template-columns: repeat(2,50%);
@@ -90,6 +96,41 @@
 
         &__title,&__paragraph{
             text-align: left;
+        }
+        &__title{
+            font-size: 1.5em;
+        }
+        &__paragraph{
+            padding-right: 5em;
+            font-size: .8em;
+        }
+    }
+}
+
+@media screen and (min-width:1240px){
+    .work{
+        &__title{
+            font-size: 2em;
+        }
+        &__paragraph{
+            font-size: 1em;
+        }
+        &__link{
+            font-size: 1em;
+        }
+    }
+}
+
+@media screen and (min-width:1440px){
+    .work{
+        &__title{
+            font-size: 2.4em;
+        }
+        &__paragraph{
+            font-size: 1.2em;
+        }
+        &__link{
+            font-size: 1.3em;
         }
     }
 }

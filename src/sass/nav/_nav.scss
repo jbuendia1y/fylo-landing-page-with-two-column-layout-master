@@ -31,8 +31,35 @@
 
 @media screen and (min-width:1024px){
     .nav{
+        padding-top: 1em;
         &__logo{
             width: 15%;
+        }
+    }
+
+    .menu{
+        &__item{
+            margin: 0 1em;
+        }
+    }
+}
+
+@media screen and (min-width:1240px){
+    .menu{
+        &__item{
+            margin: 0 1.5em;
+        }
+
+        &__link{
+            font-size: 1.2em;
+        }
+    }
+}
+
+@media screen and (min-width:1440px){
+    .menu{
+        &__link{
+            font-size: 1.4em;
         }
     }
 }

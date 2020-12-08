@@ -17,7 +17,6 @@
 
     &-form{
         @include form;
-
         &__email{
             border: 1px solid $VeryDarkBlue;
         }
@@ -26,6 +25,7 @@
 
 @media screen and (min-width:1024px){
     .header{
+        margin-top: 2em;
         &__box{
             display: grid;
             grid-template-columns: 50% 50%;
@@ -41,15 +41,65 @@
             text-align: left;
         }
 
+        &__title{
+            font-size: 1.8em;
+        }
+        &__paragraph{
+            font-size: .9em;
+        }
+
         &-form{
             flex-direction: row;
+            &__email,&__button{
+                font-size: .8em;
+            }
             &__email{
+                padding-left: .5em;
                 margin-bottom: 0;
                 width: 50%;
             }
             &__button{
                 margin-left: 1em;
-                width: 40%;
+                width: 35%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1024px){
+    .header{
+        &__title{
+            font-size: 2.25em;
+        }
+        &__paragraph{
+            font-size: 1.25em;
+        }
+
+        &-form{
+            &__email,&__button{
+                font-size: 1em;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1240px){
+    .header{
+        &__paragraph{
+            line-height: 25px;
+        }
+    }
+}
+
+@media screen and (min-width:1440px){
+    .header{
+        &__title{
+            font-size: 2.7em;
+        }
+
+        &-form{
+            &__email,&__button{
+                font-size: 1.2em;
             }
         }
     }
