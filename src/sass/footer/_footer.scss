@@ -106,6 +106,26 @@
                 margin-top: 0;
                 justify-content: start;
             }
+
+            &-block{
+                transition: all .25s;
+                &:hover{
+                    color :$BrightBlue;
+                }
+            }
+        }
+
+        &__social{
+            transition: all .25s;
+            &:hover{
+                color: $BrightBlue;
+            }
+            &-center{
+                transition: all .25s;
+                &:hover{
+                    border-color: $BrightBlue;
+                }
+            }
         }
     }
 }

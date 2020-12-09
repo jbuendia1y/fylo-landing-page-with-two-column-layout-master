@@ -45,8 +45,13 @@
             width: 85%;
             align-items: flex-start;
             margin-left: auto;
+
             &__button{
                 width: 50%;
+                &:hover{
+                    opacity: 1;
+                    filter: brightness(150%);
+                }
             }
         }
         &__title{

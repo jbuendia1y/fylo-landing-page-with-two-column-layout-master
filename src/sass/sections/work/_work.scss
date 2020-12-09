@@ -98,11 +98,17 @@
             text-align: left;
         }
         &__title{
-            font-size: 1.5em;
+            font-size: 2em;
         }
         &__paragraph{
             padding-right: 5em;
-            font-size: .8em;
+            font-size: 1em;
+        }
+        &__link{
+            transition: all .5s;
+            &:hover{
+                filter: brightness(125%);
+            }
         }
     }
 }

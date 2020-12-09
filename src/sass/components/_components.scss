@@ -7,9 +7,9 @@
         width: 100%;
         padding: .8em;
         border: none;
-        border-radius: 2px;
+        border-radius: 4px;
         
-        box-shadow: 10px 5px 18px -17px $LightGray;
+        box-shadow: 5px 10px 15px -15px $VeryDarkBlue;
     }
     
     &__email{
@@ -18,11 +18,24 @@
         box-sizing: border-box;
 
         padding-left: 1.5em;
-        margin-bottom: .5em;
+        margin-bottom: 1em;
+        
+        &:invalid{
+            border: 1px solid red;
+        }
     }
     &__button{
         color: $LightGrayishBlue;
         background-color: $BrightBlue;
         font-weight: 700;
+
+        @media screen and (min-width:1024px){
+            cursor: pointer;
+            transition: all .5s;
+            opacity: 1;
+            &:hover{
+                opacity: .7;
+            }
+        }
     }
 }
